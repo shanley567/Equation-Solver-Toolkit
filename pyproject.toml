@@ -9,11 +9,16 @@ description = "A generalised engineering equation solver with symbolic and numer
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-  "sympy",
-  "numpy",
-  "matplotlib",
-  "pint"
+    "sympy",
+    "numpy",
+    "matplotlib",
+    "pint"
 ]
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "black",
+    "ruff"
+]
