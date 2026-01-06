@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "engineering-equation-solver"
+version = "0.1.0"
+description = "A generalised engineering equation solver with symbolic and numeric capabilities."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "sympy",
+  "numpy",
+  "matplotlib",
+  "pint"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
